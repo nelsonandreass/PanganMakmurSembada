@@ -1,0 +1,52 @@
+.test{
+    background-color: red;
+}
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+
+.btn-kirim{
+    background-color: white;
+    color: #85BB40;
+    border-radius: .5rem;
+    border-style:  solid;
+    border-color: #85BB40;
+    height: 5rem;
+    width: 10rem;
+}
+.normal-font{
+    font-size: 1rem;
+}
+
+.img-size-accent{
+    width: 60vh;
+    height: 60vh;
+    position: absolute;
+}
+.border-radius{
+    border-radius: 1rem;
+}
+.accent{
+    position: absolute;
+    z-index: -1;
+    background-color: #85BB40;
+}
+.icon{
+    width: 6rem;
+    height: 4rem;
+}
+.navbar-container{
+    margin-left: 4rem;
+}
+
+.bold{
+    font-weight: 700;
+}
