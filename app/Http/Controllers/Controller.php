@@ -52,7 +52,7 @@ class Controller extends BaseController
                 unset($stores[$key]);
             }
         }
-        //end of store
+        //end of store 
 
         return view('lending' , ['banners' => $banners , 'first_banner' => $first_banner , "minigalleries" => $mini_galleries , 'products' => $products, 'stores' => $stores]);
     }
