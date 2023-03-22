@@ -23,10 +23,18 @@ Route::get('/ricemart','LinkTreeController@index');
 Route::get('/steven','LinkTreeController@index');
 Route::get('/willinathanael','LinkTreeController@index');
 
+Route::get("clear-cache", function () {
+    /* php artisan cache:clear */
+    \Artisan::call('cache:clear');
 
-Route::get('/email' , function(){
-    $msg = "test";
-    mail("nelson.andreas35@yahoo.com","My subject",$msg);
+    dd('Application cache cleared successfully.');
+});
+
+Route::get("clear-views", function () {
+    /* php artisan view:clear */
+    \Artisan::call('view:clear');
+
+    dd('Compiled views cleared successfully.');
 });
 
 // Route::get('/dashboard', function () {
