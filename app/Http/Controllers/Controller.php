@@ -6,7 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-
+use Illuminate\Support\Facades\Cache;
 
 use App\Models\Gallery;
 use App\Models\Store;
@@ -24,7 +24,7 @@ class Controller extends BaseController
 
     public function index(){
         // banner
-        $banners = cache()->remember("banner_cache",60*60*24,function (){
+        $banners = Cache::rememberForever("banner_cache",function (){
             return Gallery::where("category" , "=" , "Banner")->get();
         });
         $first_banner = $banners[0];
@@ -32,13 +32,13 @@ class Controller extends BaseController
         // end of banner
 
         // mini gallery
-        $mini_galleries = cache()->remember("minigallery_cache",60*60*24,function (){
+        $mini_galleries = Cache::rememberForever("minigallery_cache",function (){
             return Gallery::where("category" , "=" , "MiniGallery")->take(8)->get();
         });
         //end of mini gallery
 
         // product
-        $products = cache()->remember("gallery_cache",60*60*24,function (){
+        $products = Cache::rememberForever("gallery_cache",function (){
             return Gallery::where("category" , "=" , "Product")->get();
         });
         // end of product
