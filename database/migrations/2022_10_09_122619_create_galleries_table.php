@@ -17,6 +17,9 @@ class CreateGalleriesTable extends Migration
             $table->id();
             $table->string("foto");
             $table->string("category");
+            $table->string("nama")->nullable();
+            $table->string("jenis")->nullable();
+            $table->string("ukuran")->nullable();
             $table->timestamps();
         });
     }

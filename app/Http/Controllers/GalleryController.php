@@ -40,17 +40,32 @@ class GalleryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    private function clearcache(){
+        cache()->forget("banner_cache");
+        cache()->forget("gallery_cache");
+        cache()->forget("minigallery_cache");
+    }
+    
     public function store(Request $request)
     {
         $photoExt = $request->file('foto')->getClientOriginalExtension();
         $foto = date("dmYHis").".".$photoExt;
         Storage::disk('local')->putFileAs('public',$request->file('foto'), $foto);
         $category = $request->input('category');
+        $nama = $request->input('nama');
+        $jenis = $request->input('jenis');
+        $ukuran = $request->input('ukuran');
+
         $data = array(
             'foto' => $foto,
-            'category' => $category
+            'category' => $category,
+            'nama' => $nama,
+            'jenis' => $jenis,
+            'ukuran' => $ukuran
         );
         Gallery::create($data);
+        $this->clearcache();
         return redirect()->back();
     }
 
@@ -73,7 +88,9 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $gallery = Gallery::find($id);
+        $categories = Category::get();
+        return view('admin.gallery.edit', ['gallery' => $gallery, 'categories' => $categories , 'id' => $id]);
     }
 
     /**
@@ -85,7 +102,21 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $nama = $request->input("nama");
+        $jenis = $request->input("jenis");
+        $ukuran = $request->input("ukuran");
+
+        $data = array(
+            'nama' => $nama,
+            'jenis' => $jenis,
+            'ukuran' => $ukuran
+        );
+
+        Gallery::where('id' , $id)->update($data);
+        $this->clearcache();
+
+        return redirect("/gallery");
     }
 
     /**
@@ -97,7 +128,16 @@ class GalleryController extends Controller
     public function destroy($id)
     {
         $data = Gallery::find($id);
+        $image_path = '/public/'.$data->foto;
+        if(Storage::exists($image_path)){
+            Storage::delete($image_path);
+        } 
+        else{
+            die("Failed");
+        }
         $data->delete();
+        $this->clearcache();
+
         return redirect()->back();
     }
 }

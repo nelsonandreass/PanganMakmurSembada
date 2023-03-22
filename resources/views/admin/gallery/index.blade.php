@@ -17,6 +17,7 @@
                             <tr>
                                 <th scope="col">No</th>
                                 <th scope="col">Foto</th>
+                                <th scope="col">Nama</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">Action</th>
 
@@ -28,8 +29,9 @@
                             @forelse($datas as $data)
                                 <tr>
                                     <td>{{$no}}</td>
-                                    <td><img class="icons" src="{{url('/storage/'.$data->foto)}}" alt=""></td>
-                                    <td>{{$data->category}}</td>
+                                    <td style="width:15%; height:30%;"><img src="{{url('/storage/'.$data->foto)}}"  alt=""></td>
+                                    <td class="text-center">{{$data->nama}}</td>
+                                    <td class="text-center">{{$data->category}}</td>
                                     <td>
                                         <div class="row">
                                             <div class="mr-3">

@@ -12,6 +12,9 @@ class Gallery extends Model
     protected $fillable = [
         'foto',
         'category',
+        'nama',
+        'jenis',
+        'ukuran'
     ];
 
     public function category(){

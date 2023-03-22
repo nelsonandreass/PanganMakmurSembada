@@ -21,10 +21,16 @@
                     <x-nav-link :href="route('category.index')" :active="request()->segment(1) == 'category'">
                         {{ __('Category') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('product.index')" :active="request()->segment(1) == 'product'">
-                        {{ __('Product') }}
+                    <!--<x-nav-link :href="route('product.index')" :active="request()->segment(1) == 'product'">-->
+                    <!--    {{ __('Product') }}-->
+                    <!--</x-nav-link>-->
+                    <!--<x-nav-link :href="route('artikel.index')" :active="request()->segment(1) == 'artikel'">-->
+                    <!--    {{ __('Artikel') }}-->
+                    <!--</x-nav-link>-->
+                    <x-nav-link :href="route('store.index')" :active="request()->segment(1) == 'store'">
+                        {{ __('Store') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('jumbotron.index')" :active="request()->segment(1) == 'jumbotron'">
+                    <!-- <x-nav-link :href="route('jumbotron.index')" :active="request()->segment(1) == 'jumbotron'">
                         {{ __('Banner') }}
                     </x-nav-link>
                     <x-nav-link :href="route('faq.index')" :active="request()->segment(1) == 'faq'">
@@ -32,7 +38,7 @@
                     </x-nav-link>
                     <x-nav-link :href="route('offer.index')" :active="request()->segment(1) == 'faq'">
                         {{ __('Offer') }}
-                    </x-nav-link>
+                    </x-nav-link> -->
                 </div>
                 
             </div>

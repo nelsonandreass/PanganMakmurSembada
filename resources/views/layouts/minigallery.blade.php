@@ -1,10 +1,9 @@
-<div class="d-none d-md-block">
-    <div class="row " id="gallery">
+<div class="section w-100 d-none d-md-block" style="height:auto !important;" id="gallery">
+    <div class="row w-100 m-0 p-0" >
         @foreach($minigalleries as $gallery)
-            <div class="col-3" style="heigth: 100vh; max-height: 100vh">
-                <img src="{{url('/storage/'.$gallery->foto)}}" class="d-block w-100 h-100" alt="...">
+            <div class="col-md-3 m-0 p-0">
+                <img src="{{url('/storage/'.$gallery->foto)}}" class="d-block" style="width:100%" >
             </div>
         @endforeach
-        
     </div>
 </div>

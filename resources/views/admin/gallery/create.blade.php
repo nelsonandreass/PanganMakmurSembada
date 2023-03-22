@@ -33,6 +33,31 @@
 
                             </select>
                         </div>
+                        <label for="" class="mt-3">Untuk Produk</label>
+                        <div class="mt-4">
+                            <x-label for="nama" : value="Nama" />
+
+                            <x-input id="nama" class="block mt-1 w-full"
+                                            type="text"
+                                            name="nama"
+                                            />
+                        </div>
+                        <div class="mt-4">
+                            <x-label for="jenis" : value="Jenis" />
+
+                            <x-input id="jenis" class="block mt-1 w-full"
+                                            type="text"
+                                            name="jenis"
+                                            />
+                        </div>
+                        <div class="mt-4">
+                            <x-label for="ukuran" : value="Ukuran" />
+
+                            <x-input id="ukuran" class="block mt-1 w-full"
+                                            type="text"
+                                            name="ukuran"
+                                            />
+                        </div>
                         <x-button class="mt-3">
                             {{ __('Simpan') }}
                         </x-button>

@@ -1,27 +1,52 @@
-.test{
-    background-color: red;
+.nav-item a:hover{
+    color: #3092CF !important;
 }
+.nav-active{
+    color: #3092CF !important;
+}
+.nav-shadow{
+    box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.20);
+}
+.border-bottom{
+    border-bottom: 3rem solid #3092CF;
+}
+/* .nav-item :hover{
+    border-bottom: .3rem solid #3092CF;
+} */
 
 .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
 
+.text-green{
+    color: #85BB40;
+}
 
-.btn-kirim{
+.btn-green{
     background-color: white;
     color: #85BB40;
     border-radius: .5rem;
     border-style:  solid;
     border-color: #85BB40;
-    height: 5rem;
-    width: 10rem;
+    transition-duration: .2s;
 }
+
+.btn-green:hover{
+    background-color: #85BB40;
+    color: white;
+    border-radius: .5rem;
+    border-style:  solid;
+    border-color: #85BB40;
+    transition-duration: .2s;
+}
+
 .normal-font{
     font-size: 1rem;
 }
@@ -29,7 +54,6 @@
 .img-size-accent{
     width: 60vh;
     height: 60vh;
-    position: absolute;
 }
 .border-radius{
     border-radius: 1rem;
@@ -47,6 +71,173 @@
     margin-left: 4rem;
 }
 
+.h1{
+    font-size: 2.5vw;
+}
+.large-font{
+    font-size: 1.6vw;
+}
+.reguler-font{
+    font-size: 1vw;
+
+}
+.small-font{
+    font-size: .9vw;
+}
+
+.special-font-footer{
+    font-size: 1vw;
+}
+
 .bold{
     font-weight: 700;
+}
+/* product slider */
+
+.center .slick-track .slick-current{
+    transform: scale(1) !important;
+    opacity: 1;
+    transition-duration: .1s ;
+}
+
+.item{
+    transform: scale(.6);
+    opacity: .5;
+    transition-duration: .1s ;
+}
+
+.center .slick-prev, .slick-next{
+    height: 100% !important;
+}
+
+/* .product-slider .items{
+    opacity: .5;
+}
+
+
+.product-slider .slick-track .slick-current{
+    -moz-transform:scale(1.08);-ms-transform:scale(1.08);-o-transform:scale(1.08);-webkit-transform:scale(1.08);color:#e67e22;opacity:1;transform:scale(1.08);
+} */
+
+/* .product-slider{
+    display: flex;
+}
+.product-slider .items{
+    width: 350px;
+    height: 250px;
+    margin: 50px;
+    position: relative;
+}
+.product-slider .items .slick-center{
+    transform: scale(1.2) !important;
+} */
+
+
+/* end of product slider */
+
+.background-light-dark{
+    background-color: #F9FCFE;
+}
+.background-light-green{
+    background-color: #85BB40;
+}
+
+.tagline{
+    background-image: url("/assets/images/pexels-polina-tankilevitch-4110256.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(255,196,53);
+    background: linear-gradient(90deg, rgba(255,196,53,0.9528186274509804) 0%, rgba(255,196,53,0.8099614845938375) 21%, rgba(0,212,255,0) 100%);
+}
+.img-desc{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 1rem;
+    box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
+    -webkit-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
+    -moz-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
+}
+.img-desc-mobile{
+    height: 50vh;
+    width: 95%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
+    -webkit-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
+    -moz-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
+}
+
+.btn-linktree span img{
+    margin-right: 15px;
+    display: block;
+    width: 2rem;
+    height: 2.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+}
+
+.btn-linktree{
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.btn-linktree:hover{
+    background-color: #1EA3DC;
+    border: 1px solid #1EA3DC;
+    color: #ffffff;
+    transition: .3s;
+}
+.card-custom{
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0px 4px 19px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 19px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 19px -6px rgba(0,0,0,0.75);
+}
+
+.blue-block{
+    height: .5rem;
+    background-color: #1EA3DC;
+}
+.linktree{
+    background-color: #F9FCFE;
+}
+.linktree-logo{
+    width: 11rem;
+    height: 8rem;
+}
+
+.store-icon{
+    width: 50% !important;
+    text-align: center !important;
+    margin: auto !important;
+    display: block;
+}
+
+.load-more-items{
+    display: none;
+}
+
+.text-footer:hover{
+    color: #d4d3d3 !important;
 }

@@ -1,4 +1,4 @@
-<div style="height:100vh !important;" id="contact">
+<!-- <div style="height:100vh !important;" id="contact">
     <div class="d-none h-100 d-md-block">
         <div class="row h-100 ">
             <div class="col-6 my-auto pr-3">
@@ -113,4 +113,67 @@
         </div>
     </div>
     
+</div> -->
+<div class="section">
+  <div class="row w-100 m-0 p-0" style="height: 100vh !important;">
+    <div class="col-md-6 h-100">
+      <div class="row h-100">
+        <div class="col-3">
+          &nbsp;
+        </div>
+        <div class="col-8 my-auto">
+          <div class="section">
+           <h1 class="h1"><b></b>Hubungi<br>Kami</h1>
+                        <br>
+                        <span>Punya hal yang ingin ditanyakan? Silahkan hubungi kami melalui kontak dibawah ini, atau datanglah ke toko kami untuk berdiskusi bersama kami secara langsung</span>
+                        <br>
+                        <div class="row">
+                            <div class="col-1"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="col">Pergudangan pasar induk</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="fa-solid fa-phone"></i></div>
+                            <div class="col">0898989843</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="col">info@panganmakmursembada.com</div>
+                        </div>
+                        <br>
+                        <h3>Silahkan Koreksi Kami!</h3>
+                        <form action="">
+                            <textarea class="form-control "name="" id="" cols="20" rows="5"></textarea>
+                            <button>Kirim</button>
+                        </form>
+          </div>
+          <div class="col-1">
+          &nbsp;
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 h-100 " style="background-color: #FFC435">
+      <div class="row h-100">
+        <div class="col-1 my-auto">
+          &nbsp;
+        </div>
+        <div class="col-8 my-auto">
+          <h1 style="color:white;"> <b>Jadilah Partner <br>Bisnis Kami</b></h1>
+                        <br>
+                        <span style="color:white;">Kami siap melayani anda! Bergabunglah bersama kami dan jadilah partner bisnis Pangan Makmur Sembada dengan mengisi form dibawah ini</span>
+                        <form action="">
+                            <input class="form-control" type="text" name="nama" placeholder="Nama Anda">
+                            <input class="form-control" type="text" name="email" placeholder="E-Mail">
+                            <input class="form-control" type="text" name="telepon" placeholder="Telepon">
+                            <textarea name="alamat" id="" cols="20" rows="5" class="form-control" placeholder="alamat"></textarea>
+                            <button>Kirim   </button>
+                        </form>
+        </div>
+         <div class="col-2 my-auto">
+          &nbsp;
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
