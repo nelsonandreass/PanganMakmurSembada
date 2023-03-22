@@ -44,7 +44,9 @@ class Controller extends BaseController
         // end of product
 
         //store
-        $stores = Store::get();
+        $stores = Cache::rememberForever("store_cache",function (){
+            return Store::get();
+        });
         foreach($stores as $key => $store){
             if($store->namastore == "Pangan Makmur Sembada" || $store->namastore == "Whatsapp"){
                 unset($stores[$key]);
