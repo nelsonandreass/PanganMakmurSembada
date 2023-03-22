@@ -24,6 +24,11 @@ Route::get('/steven','LinkTreeController@index');
 Route::get('/willinathanael','LinkTreeController@index');
 
 
+Route::get('/email' , function(){
+    $msg = "test";
+    mail("nelson.andreas35@yahoo.com","My subject",$msg);
+});
+
 // Route::get('/dashboard', function () {
 //     return view('admin.dashboard');
 // })->middleware(['auth','IsAdmin'])->name('dashboard');

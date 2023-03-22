@@ -44,7 +44,6 @@
     <script>
         $(document).ready(function(e){
             $('#logout').click(function(){
-                alert("tesr");
                 $('#dropdown').removeClass('d-none');
             });
         });
