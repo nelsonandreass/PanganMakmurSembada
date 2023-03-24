@@ -154,8 +154,8 @@
     background: linear-gradient(90deg, rgba(255,196,53,0.9528186274509804) 0%, rgba(255,196,53,0.8099614845938375) 21%, rgba(0,212,255,0) 100%);
 }
 .img-desc{
-    height: 50vh;
-    width: 50vh;
+    height: 50%;
+    width: 90%;
     border-radius: 1rem;
     box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
     -webkit-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
