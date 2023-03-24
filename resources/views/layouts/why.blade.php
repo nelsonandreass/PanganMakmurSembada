@@ -1,5 +1,5 @@
-<div class="section w-100 background-light-dark d-none d-md-block "  id="why">
-    <div class="container-fluid d-none d-md-block ">
+<div class="section w-100 background-light-dark d-none d-md-block"  id="why">
+    <div class="container-fluid d-none d-md-block">
         <div class="row p-0 m-0" style="height:100vh !important;margin-left:10% !important;margin-right:10% !important;">
             <div class="row" style="">
                 <div class="col-md-12 my-auto">
@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="row justify-content-center text-green p-0 m-0" >
-                <div class="col-md card mx-2 text-center p-3 h-50 small-font" >
+                <div class="col-md card mx-2 text-center p-3 h-75 small-font" >
                     <div class="row h-25">
                         <img src="{{url('/assets/images/bowl-rice-solid.svg')}}" style="fill:#85BB40;" class="w-100 h-50 my-auto" alt="...">
                     </div>
@@ -18,7 +18,7 @@
                         <p>Dengan pengalaman lebih dari <b>30 tahun</b> dalam dunia beras, menjadikan kami lebih<b>terpercaya dan berpengalaman</b></p>
                     </div>
                 </div>
-                <div class="col-md card mx-2 text-center p-3 h-50 small-font" >
+                <div class="col-md card mx-2 text-center p-3 h-75 small-font" >
                     <div class="row h-25">
                         <img src="{{url('/assets/images/car-solid.svg')}}" class="w-100 h-50 my-auto" alt="...">
                     </div>
@@ -29,7 +29,7 @@
                         <p>Rekan kerja yang <b>terpercaya dan dapat diandalkan</b>. Bersama mewujudkan impian anda.</p>
                     </div>
                 </div>
-                <div class="col-md card mx-2 text-center p-3 h-50 small-font" >
+                <div class="col-md card mx-2 text-center p-3 h-75 small-font" >
                     <div class="row h-25">
                         <img src="{{url('/assets/images/money-bill-solid.svg')}}" class="w-100 h-50 my-auto" alt="...">
                     </div>
@@ -38,7 +38,7 @@
                     </div>
                     <p> Pemilihan bahan baku terbaik, untuk menghasilkan beras dengan <b>kualitas dan harga terbaik</b></p>
                 </div>
-                <div class="col-md card mx-2 text-center p-3 h-50 small-font" >
+                <div class="col-md card mx-2 text-center p-3 h-75 small-font" >
                     <div class="row h-25">
                         <img src="{{url('/assets/images/thumbs-up-solid.svg')}}" class="w-100 h-50 my-auto" alt="...">
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                     <p>Pelayanan, pengalaman dan rekan kerja terbaik untuk anda.<b>Your Satisfaction Is Our Priority</b></p>
                 </div>
-                <div class="col-md card mx-2 text-center p-3 h-50 small-font" >
+                <div class="col-md card mx-2 text-center p-3 h-75 small-font" >
                     <div class="row h-25">
                         <img src="{{url('/assets/images/earth-asia-solid.svg')}}" class="w-100 h-50 my-auto" alt="...">
                     </div>
