@@ -1,9 +1,16 @@
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top m-0 p-0">
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top m-0 p-0">
   <div class="container-fluid nav-shadow" >
-	<a class="navbar-brand mx-5 my-2 p-0" href="#home">
+	<!-- on lg -->
+	<a class="navbar-brand mx-5 pb-2 my-2 p-0 d-none d-md-block" href="#home"> 
 		<img src="{{url('/assets/images/pms.png')}}" class="d-block icon"  alt="...">
 	</a>
+	<!-- on sm -->
+	<a class="navbar-brand mx-2 my-2 p-0 d-block d-sm-none" href="#home">
+		<img src="{{url('/assets/images/pms.png')}}" class="d-block icon"  alt="...">
+	</a>
+	
+
 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>

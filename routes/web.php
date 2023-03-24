@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/mobirise', 'Controller@mobirise');
 
 Route::get('/', 'Controller@index');
 Route::get('/sendemail' , 'SendEmailController@store');
@@ -37,18 +36,16 @@ Route::get("clear-views", function () {
     dd('Compiled views cleared successfully.');
 });
 
-// Route::get('/dashboard', function () {
-//     return view('admin.dashboard');
-// })->middleware(['auth','IsAdmin'])->name('dashboard');
+Route::get('/clearcache', function () {
+    \Artisan::call('cache:clear');
+    \Artisan::call('view:clear');
+    die("success");
+});
 
-//Route::get('/dashboard', 'Controller@index')->middleware(['auth','IsAdmin'])->name('dashboard');
+
 
 Route::middleware(['IsAdmin'])->group(function(){
-    // Route::get('/dashboard' , function(){
-    //     return view('admin.dashboard');
-    // })->name('dashboard');
     Route::get('/dashboard' , "DashboardController@index")->name('dashboard');
-
     Route::resource('/category' , CategoryController::class)->name('*','category');
     Route::resource('/product', ProductController::class)->name('*','product');
     Route::resource('/jumbotron', JumbotronController::class)->name('*','jumbotron');
@@ -58,11 +55,6 @@ Route::middleware(['IsAdmin'])->group(function(){
     Route::resource('/artikel', ArtikelController::class)->name('*','artikel');
     Route::resource('/store', StoreController::class)->name('*','store');
     Route::resource('/saran', SaranController::class)->name('*','saran');
-
-
-
-
-    
 });
 
 require __DIR__.'/auth.php';

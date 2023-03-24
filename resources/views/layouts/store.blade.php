@@ -1,5 +1,5 @@
 <div class="section w-100" style="min-height:80vh !important;" id="commerce">
-    <div class="container-fluid " style="min-height:80vh !important">
+    <div class="container-fluid pt-5" style="min-height:80vh !important">
         <div class="row my-auto mx-auto d-none d-md-block" style="width:80%">
             <div class="row" >
                 <h1 class="text-center my-3"><b>Produk Kami Tersedia di</b></h1>
