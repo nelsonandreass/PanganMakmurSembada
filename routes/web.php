@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::get("/test" , function(){
+    die("Success");
+});
 Route::get('/', 'Controller@index');
 Route::get('/sendemail' , 'SendEmailController@store');
 Route::get('/linktree','LinkTreeController@index');
