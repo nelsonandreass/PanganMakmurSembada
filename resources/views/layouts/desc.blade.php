@@ -4,7 +4,7 @@
         <div class="row " style="height:100vh !important;margin-left:10%;margin-right:10%;">
             <div class="col-md-6 my-auto ">
                 <div class="wrapper text-center">
-                    <img src="{{url('/assets/images/pexels-pixabay-164504.jpg')}}" class="img-desc">
+                    <img src="{{url('/assets/images/pexels-pixabay-164504.webp')}}" class="img-desc">
                 </div>
             </div> 
             <div class="col-md-6 my-auto pl-5">
