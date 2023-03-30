@@ -161,6 +161,12 @@
     -webkit-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
     -moz-box-shadow: 16px 20px 0px -4px rgba(133,187,64,1);
 }
+
+.image-banner{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .img-desc-mobile{
     height: 50vh;
     width: 95%;
