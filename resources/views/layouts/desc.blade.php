@@ -29,16 +29,3 @@
         </div>
     </div>
 </div>
-
-<!-- <div class="row h-100 " id="profile" style="height:100vh !important;">
-    <div class="col-md-6 my-auto text-end container" >
-        <img src="{{url('/storage/'.$first_banner->foto)}}" class="img-size-accent" style="heigth:50vh;width:50vh"  alt="...">
-    </div>
-    <div class="col-md-6 my-auto container pr-5">
-        <h1><b>PT. Pangan<br>Makmur Sembada</b></h1>
-        <div class="row">&nbsp;</div>
-        <p class="text-wrap">Merupakan perusahaan yang bergerak dibidang <br> produksi & distribusi beras yang bertempat di Jakarta</p>
-        <div class="row">&nbsp;</div>
-        <p class="text-wrap">Dengan pengalaman lebih dari 30 tahun dalam dunia <br> komoditi pangan. kami PT. Pangan Makmur Sembada<br>selalu berusaha memberikan produk beras terbaik ke <br>tangan para konsumen</p>
-    </div>
-</div> -->
