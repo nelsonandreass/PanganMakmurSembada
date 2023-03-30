@@ -1,4 +1,5 @@
 <div class="section" id="contact" style="height:auto !important">
+    <!-- for desktop -->
     <div class="wrapper d-none d-md-block">
         <div class="row w-100 m-0 p-0" style="height: 100vh !important;">
             <div class="col-md-6 h-100">
@@ -55,14 +56,11 @@
             </div>
         </div>
     </div>
-
-    
-
-
+    <!-- for mobile -->
     <div class="wrapper d-block d-md-none py-3">
         <div class="row w-100 m-0 p-0" style="height: auto !important;">
             <div class="col-md-6 h-100">
-                <div class="row h-100 my-3 container">
+                <div class="row h-100 mx-auto my-3 container">
                     <div class="col-sm-12 my-auto">
                         <div class="section">
                             <h1 class=" "><b>Hubungi<br>Kami</b></h1>
@@ -93,7 +91,7 @@
                 </div>
             </div>
             <div class="col-md-6 h-100 " style="background-color: #FFC435">
-                <div class="row h-100 my-3 container">
+                <div class="row h-100 mx-auto my-3 container">
                     <div class="col-sm-12 my-auto">
                         <div class="section">
                             <h1 class="" style="color:white;"><b>Jadilah Partner<br>Bisnis Kami</b></h1>

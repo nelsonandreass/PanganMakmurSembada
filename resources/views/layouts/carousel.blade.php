@@ -2,11 +2,11 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner "style="height: 100vh !important; max-heigth: 100vh;">
             <div class="carousel-item active h-100">
-                <img src="{{url('/storage/'.$first_banner->foto)}}" class="d-block w-100 h-100" alt="...">
+                <img src="{{url('/storage/'.$first_banner->foto)}}" class="d-block w-100 image-banner h-100" alt="...">
             </div>
             @foreach($banners as $banner)
                 <div class="carousel-item h-100">
-                    <img src="{{url('/storage/'.$banner->foto)}}" class="d-block w-100 h-100" alt="...">
+                    <img src="{{url('/storage/'.$banner->foto)}}" class="d-block w-100 image-banner h-100" alt="...">
                 </div>
             @endforeach
             
