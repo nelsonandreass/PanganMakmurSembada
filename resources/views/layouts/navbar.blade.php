@@ -31,9 +31,9 @@
 		<!-- <li class="nav-item mx-3">
 		  <a class="nav-link normal-font d-mpn" aria-current="page" id="nav-artikel" href="#artikel">Artikel</a>
 		</li>	 -->
-		<li class="nav-item mx-3">
+		<!-- <li class="nav-item mx-3">
 		  <a class="nav-link normal-font" aria-current="page" id="nav-gallery" href="#gallery">Galeri</a>
-		</li>			
+		</li>			 -->
 	  </ul>		  
 	</div>
   </div>
