@@ -3,6 +3,8 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
         </h2>
+        <link rel="icon" type="image/x-icon" href="{{url('/assets/images/pms.png')}}">
+
     </x-slot>
 
     <div class="py-12">
