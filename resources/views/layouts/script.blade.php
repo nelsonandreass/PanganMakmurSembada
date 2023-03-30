@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     $(document).ready(function () {
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
@@ -105,7 +105,7 @@
     }
 
 });
-</script>
+</script> -->
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -220,41 +220,6 @@
             }
             }
         ]
-        });
-
-    $('.center-artikel').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite:true,
-
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-        ]
     });
 
     $('.center-commerce').slick({
@@ -291,6 +256,42 @@
             }
         ]
     });
+
+    // $('.center-artikel').slick({
+    //     dots: true,
+    //     infinite: false,
+    //     speed: 300,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     infinite:true,
+
+    //     responsive: [
+    //         {
+    //         breakpoint: 1024,
+    //         settings: {
+    //             slidesToShow: 3,
+    //             slidesToScroll: 3,
+    //             infinite: true,
+    //             dots: true
+    //         }
+    //         },
+    //         {
+    //         breakpoint: 600,
+    //         settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2
+    //         }
+    //         },
+    //         {
+    //         breakpoint: 480,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //         }
+    //         }
+    //     ]
+    // });
+ 
 
 
     var tempinitid = $(".slick-current").attr("id");
@@ -341,37 +342,6 @@
 			if ($(".load-more-items:hidden").length == 0) {
 				$(".load-more-button").css('visibility', 'hidden');
 			}
-			// $('html,body').animate({
-			// 	scrollTop: $(this).offset().top
-			// }, 500);
 		});
 	});
-</script>
-
-<script>
-    $(document).ready(function(){
-        
-        // $('#kirimsaran').click(function(e){
-            
-        //     e.preventDefault();
-        //     var saran = $("#saran").val();
-        //     if(saran == "" || saran == null){
-        //         alert("Belum Input Saran");
-        //     }
-        //     $.ajax({
-        //         url: "/api/saran",
-        //         datatype: "application/x-www-form-urlencoded",
-        //         method:"POST",
-        //         data:{
-        //             saran: saran
-        //         },
-        //         success: function()
-        //         {
-        //             console.log($('#modalsaran'));
-                    
-        //         },
-        //     })
-        // });
-         
-    });
 </script>
