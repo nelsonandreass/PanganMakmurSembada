@@ -3,11 +3,11 @@
   <div class="container-fluid nav-shadow" >
 	<!-- on lg -->
 	<a class="navbar-brand mx-5 pb-2 my-2 p-0 d-none d-md-block" href="#home"> 
-		<img src="{{url('/assets/images/pms.webp')}}" class="d-block icon"  alt="...">
+		<img src="{{url('/assets/images/pms.png')}}" class="d-block icon"  alt="...">
 	</a>
 	<!-- on sm -->
 	<a class="navbar-brand mx-2 my-2 p-0 d-block d-sm-none" href="#home">
-		<img src="{{url('/assets/images/pms.webp')}}" class="d-block icon"  alt="...">
+		<img src="{{url('/assets/images/pms.png')}}" class="d-block icon"  alt="...">
 	</a>
 	
 
