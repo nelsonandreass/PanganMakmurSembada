@@ -27,7 +27,6 @@ Route::get('/willinathanael','LinkTreeController@index');
 Route::get("clear-cache", function () {
     /* php artisan cache:clear */
     \Artisan::call('cache:clear');
-
     dd('Application cache cleared successfully.');
 });
 

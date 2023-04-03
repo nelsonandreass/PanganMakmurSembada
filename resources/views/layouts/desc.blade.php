@@ -4,7 +4,7 @@
         <div class="row " style="height:100vh !important;margin-left:10%;margin-right:10%;">
             <div class="col-md-6 my-auto ">
                 <div class="wrapper text-center">
-                    <img src="{{url('/assets/images/pexels-pixabay-164504.webp')}}" class="img-desc">
+                    <img src="{{url('/assets/images/pexels-pixabay-164504.webp')}}" class="img-desc" alt="panganmakmursembada">
                 </div>
             </div> 
             <div class="col-md-6 my-auto pl-5">
@@ -19,7 +19,7 @@
     <div class="container p-0 m-0 d-block d-sm-none">
         <div class="row p-0 m-0" style="height:100vh !important;">
             <div class="col-md-6 my-3 mx-auto">
-                <img src="{{url('/assets/images/pexels-pixabay-164504.jpg')}}" class="img-desc-mobile mx-1">
+                <img src="{{url('/assets/images/pexels-pixabay-164504.webp')}}" class="img-desc-mobile mx-1" alt="panganmakmursembada">
             </div>
             <div class="col-md-6 my-5 px-5 ">
                 <h1 class="bold text-wrap"><b>PT. Pangan<br>Makmur Sembada</b></h1>
