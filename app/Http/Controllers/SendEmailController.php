@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\PartnerMail;
+
+use App\Jobs\EmailJob;
+
 
 class SendEmailController extends Controller
 {
@@ -15,7 +16,7 @@ class SendEmailController extends Controller
      */
     public function index()
     {
-        //
+      
     }
 
     /**
@@ -36,7 +37,29 @@ class SendEmailController extends Controller
      */
     public function store(Request $request)
     {
-        Mail::to("Leobunseno@gmail.com")->send(new PartnerMail());
+        // $destination = $request->input("email");
+        // $name = $request->input("nama");
+        // $data = [
+        //     'subject' => 'Pangan Makmur Sembada',
+        //     'body' => "Halo ". $name . "\n\n Terimakasih telah menghubungi kami. Tim Bisnis kami akan segera menghubungi anda. \n\n Terimakasih"
+        // ];
+        // try {
+        //     Mail::to($destination)->send(new MailNotif($data));
+        //     return redirect()->back()->with("success" , "true");
+        // } catch (Throwable $th) {
+        //     return response()->json(['Failed']);
+        // }
+        $request = array(
+            'destination' => $request->input("email"),
+            'name' => $request->input("nama"),
+            'data' => array(
+                'subject' => 'Pangan Makmur Sembada',
+                'body' => "Halo ". $request->input("nama") . "\n\n Terimakasih telah menghubungi kami. Tim Bisnis kami akan segera menghubungi anda. \n\n Terimakasih"
+            )
+        ); 
+        $job = new EmailJob($request);
+        $this->dispatch($job);
+        return redirect()->back();
     }
 
     /**

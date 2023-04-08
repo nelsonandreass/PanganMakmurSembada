@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/test" , function(){
-    die("Success");
-});
+
 Route::get('/', 'Controller@index');
 Route::get('/sendemail' , 'SendEmailController@store');
 Route::get('/linktree','LinkTreeController@index');
@@ -24,18 +22,6 @@ Route::get('/ricemart','LinkTreeController@index');
 Route::get('/steven','LinkTreeController@index');
 Route::get('/willinathanael','LinkTreeController@index');
 
-Route::get("clear-cache", function () {
-    /* php artisan cache:clear */
-    \Artisan::call('cache:clear');
-    dd('Application cache cleared successfully.');
-});
-
-Route::get("clear-views", function () {
-    /* php artisan view:clear */
-    \Artisan::call('view:clear');
-
-    dd('Compiled views cleared successfully.');
-});
 
 Route::get('/clearcache', function () {
     \Artisan::call('cache:clear');
@@ -43,7 +29,12 @@ Route::get('/clearcache', function () {
     die("success");
 });
 
+Route::get('/migrate', function () {
+    \Artisan::call('migrate');
+    die("success");
+});
 
+Route::resource('/email' , SendEmailController::class)->name('*','email');
 
 Route::middleware(['IsAdmin'])->group(function(){
     Route::get('/dashboard' , "DashboardController@index")->name('dashboard');
