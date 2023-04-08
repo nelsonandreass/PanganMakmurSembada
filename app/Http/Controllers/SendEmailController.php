@@ -37,18 +37,6 @@ class SendEmailController extends Controller
      */
     public function store(Request $request)
     {
-        // $destination = $request->input("email");
-        // $name = $request->input("nama");
-        // $data = [
-        //     'subject' => 'Pangan Makmur Sembada',
-        //     'body' => "Halo ". $name . "\n\n Terimakasih telah menghubungi kami. Tim Bisnis kami akan segera menghubungi anda. \n\n Terimakasih"
-        // ];
-        // try {
-        //     Mail::to($destination)->send(new MailNotif($data));
-        //     return redirect()->back()->with("success" , "true");
-        // } catch (Throwable $th) {
-        //     return response()->json(['Failed']);
-        // }
         $request = array(
             'destination' => $request->input("email"),
             'name' => $request->input("nama"),
