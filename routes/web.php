@@ -26,6 +26,9 @@ Route::get('/willinathanael','LinkTreeController@index');
 Route::get('/clearcache', function () {
     \Artisan::call('cache:clear');
     \Artisan::call('view:clear');
+    \Artisan::call('route:clear');
+    \Artisan::call('config:clear');
+
     die("success");
 });
 
