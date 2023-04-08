@@ -37,6 +37,11 @@ Route::get('/migrate', function () {
     die("success");
 });
 
+Route::get('/queue', function () {
+    \Artisan::call('queue:work');
+    die("success");
+});
+
 Route::resource('/email' , SendEmailController::class)->name('*','email');
 
 Route::middleware(['IsAdmin'])->group(function(){
