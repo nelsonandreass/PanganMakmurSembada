@@ -17,7 +17,7 @@
 
     <!-- on sm -->
     <div class="container p-0 m-0 d-block d-sm-none">
-        <div class="row p-0 m-0" style="height:100vh !important;">
+        <div class="row p-0 mx-0 my-5" style="height:100vh !important;">
             <div class="col-md-6 my-3 mx-auto">
                 <img src="{{url('/assets/images/pexels-pixabay-164504.webp')}}" class="img-desc-mobile mx-1" alt="panganmakmursembada">
             </div>

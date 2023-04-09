@@ -82,9 +82,10 @@
                             </div>
                             <br>
                             <h3>Silahkan Koreksi Kami!</h3>
-                            <form action="">
+                            <form action="{{route('saran.store')}}" method="post">
+                                @csrf
                                 <textarea class="form-control mb-3 text-muted"name="" id=""  rows="5"style="width: 90% !important;background-color:#F5F5F5;opacity:.8" placeholder="Kritik & Saran"></textarea>
-                                <button id="" class="btn-green">Kirim</button>
+                                <button class="btn-green" style="height:5vh !important; width: 8vh !important">Kirim</button>
                             </form>
                         </div>
                     
@@ -104,7 +105,7 @@
                                 <input class="form-control mb-2" style="height:6vh" type="text" name="email" placeholder="E-Mail">
                                 <input class="form-control mb-2" style="height:6vh" type="text" name="telepon" placeholder="Telepon">
                                 <textarea name="alamat" id="" cols="20" rows="5" class="form-control mb-2" placeholder="Alamat"></textarea>
-                                <button class="btn-green">Kirim</button>
+                                <button class="btn-green" style="height:5vh !important; width: 8vh !important">Kirim</button>
                             </form>
                         </div>
                     </div>
