@@ -50,7 +50,7 @@
                                 <?php $no++;?>
                             @empty
                                 <tr>
-                                    <td colspan=4 class="text-center">Empty</td>
+                                    <td colspan=5 class="text-center">Empty</td>
                                 </tr>
                             @endforelse
                             

@@ -12,7 +12,7 @@
                                     <img src="{{url('/storage/'.$product->foto)}}" class="w-100" style="border-radius:.5rem;"  alt="...">
                                 </div>
                             </div>
-                            @php
+                            @php 
                                 $id = "desc-".substr($product->foto,0,strlen($product->foto)-4)
                             @endphp
                             <div class="row mb-3 d-none" id="{{$id}}">

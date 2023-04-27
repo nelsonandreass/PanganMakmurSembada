@@ -1,5 +1,3 @@
-
-
 <script type="text/javascript">
   $(document).ready(function(){
     $(document).on('click', 'a[href^="#"]', function(e) {
@@ -35,24 +33,28 @@
         $("#nav-profile").addClass("nav-active");
         $("#nav-profile").addClass("border-bottom");
     });
+
     $("#nav-produk").click(function(){
         $(".navbar-nav>li>a").removeClass("nav-active");
         $(".navbar-nav>li>a").removeClass("border-bottom");
         $("#nav-produk").addClass("nav-active");
         $("#nav-produk").addClass("border-bottom");
     });
+
     $("#nav-contact").click(function(){
         $(".navbar-nav>li>a").removeClass("nav-active");
         $(".navbar-nav>li>a").removeClass("border-bottom");
         $("#nav-contact").addClass("nav-active");
         $("#nav-contact").addClass("border-bottom");
     });
+
     $("#nav-artikel").click(function(){
         $(".navbar-nav>li>a").removeClass("nav-active");
         $(".navbar-nav>li>a").removeClass("border-bottom");
         $("#nav-artikel").addClass("nav-active");
         $("#nav-artikel").addClass("border-bottom");
     });
+
     $("#nav-gallery").click(function(){
         $(".navbar-nav>li>a").removeClass("nav-active");
         $(".navbar-nav>li>a").removeClass("border-bottom");
@@ -188,42 +190,50 @@
 
 
     var tempinitid = $(".slick-current").attr("id");
-    var initid = tempinitid.replace(".jpg","");
+    var initid = tempinitid.replace(".png","");
     var initobj = $("#desc-" + initid);
     initobj.removeClass("d-none");
     var inputtempid = $("#tempid").val(initid);
 
     function removeBefore(id){
-        var castBeforeId = id.replace(".jpg","");
+        var castBeforeId = id.replace(".png","");
         var concatBeforeId = $("#desc-" + castBeforeId);
         concatBeforeId.addClass("d-none");
     }
 
     $(".slick-next").click(function(){
+        console.log("next clicked");
         // hide before
             var idbefore = $("#desc-" + inputtempid.val());
             idbefore.addClass("d-none");
         // end hide before
         var tempid = $(".slick-current").attr("id");
-        var id = tempid.replace(".jpg","");
+        var id = tempid.replace(".png","");
         var obj = $("#desc-" + id);
+        console.log(tempid);
+        console.log(id);
+        console.log(obj);
+
         obj.removeClass("d-none");
         inputtempid.val(id);
        
     });
     $(".slick-prev").click(function(){
+        console.log("prev clicked");
+
         // hide before
             var idbefore = $("#desc-" + inputtempid.val());
             idbefore.addClass("d-none");
         // end hide before
         var tempid = $(".slick-current").attr("id");
-        var id = tempid.replace(".jpg","");
+        var id = tempid.replace(".png","");
         var obj = $("#desc-" + id);
+        console.log(obj);
+
         obj.removeClass("d-none");
         inputtempid.val(id);
     });
-  });
-  
+  }); 
 </script>
 
 <script>

@@ -42,8 +42,13 @@ Route::get('/queue', function () {
     die("success");
 });
 
-Route::resource('/email' , SendEmailController::class)->name('*','email');
+Route::get('/developer' , function(){
+    return "https://github.com/nelsonandreass";
+});
 
+//Route::resource('/email' , SendEmailController::class)->name('*','email');
+Route::resource('/saran', SaranController::class)->name('*','saran');
+Route::resource('/contact', ContactController::class)->name('*','contact');
 Route::middleware(['IsAdmin'])->group(function(){
     Route::get('/dashboard' , "DashboardController@index")->name('dashboard');
     Route::resource('/category' , CategoryController::class)->name('*','category');
@@ -54,7 +59,6 @@ Route::middleware(['IsAdmin'])->group(function(){
     Route::resource('/gallery', GalleryController::class)->name('*','gallery');
     Route::resource('/artikel', ArtikelController::class)->name('*','artikel');
     Route::resource('/store', StoreController::class)->name('*','store');
-    Route::resource('/saran', SaranController::class)->name('*','saran');
 });
 
 require __DIR__.'/auth.php';

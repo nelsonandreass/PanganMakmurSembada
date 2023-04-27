@@ -40,7 +40,7 @@
                         <h1 class="h1" style="color:white;"><b>Jadilah Partner<br>Bisnis Kami</b></h1>
                         <br>
                         <span style="color:white;">Kami siap melayani anda! Bergabunglah bersama kami dan jadilah partner bisnis Pangan Makmur Sembada dengan mengisi form dibawah ini</span>
-                        <form class="mt-3" action="{{route('email.store')}}" method="post">
+                        <form class="mt-3" action="{{route('contact.store')}}" method="post">
                             @csrf
                             <input class="form-control mb-2" style="height:6vh" type="text" name="nama" placeholder="Nama Anda">
                             <input class="form-control mb-2" style="height:6vh" type="text" name="email" placeholder="E-Mail">
@@ -99,7 +99,7 @@
                             <h1 class="" style="color:white;"><b>Jadilah Partner<br>Bisnis Kami</b></h1>
                             <br>
                             <span style="color:white;">Kami siap melayani anda! Bergabunglah bersama kami dan jadilah partner bisnis Pangan Makmur Sembada dengan mengisi form dibawah ini</span>
-                            <form class="mt-3" action="{{route('email.store')}}" method="post">
+                            <form class="mt-3" action="{{route('contact.store')}}" method="post">
                                 @csrf
                                 <input class="form-control mb-2" style="height:6vh" type="text" name="nama" placeholder="Nama Anda">
                                 <input class="form-control mb-2" style="height:6vh" type="text" name="email" placeholder="E-Mail">
