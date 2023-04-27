@@ -202,7 +202,6 @@
     }
 
     $(".slick-next").click(function(){
-        console.log("next clicked");
         // hide before
             var idbefore = $("#desc-" + inputtempid.val());
             idbefore.addClass("d-none");
@@ -210,17 +209,12 @@
         var tempid = $(".slick-current").attr("id");
         var id = tempid.replace(".png","");
         var obj = $("#desc-" + id);
-        console.log(tempid);
-        console.log(id);
-        console.log(obj);
 
         obj.removeClass("d-none");
         inputtempid.val(id);
        
     });
     $(".slick-prev").click(function(){
-        console.log("prev clicked");
-
         // hide before
             var idbefore = $("#desc-" + inputtempid.val());
             idbefore.addClass("d-none");
@@ -228,7 +222,7 @@
         var tempid = $(".slick-current").attr("id");
         var id = tempid.replace(".png","");
         var obj = $("#desc-" + id);
-        console.log(obj);
+
 
         obj.removeClass("d-none");
         inputtempid.val(id);
