@@ -1,5 +1,5 @@
 <div class="section w-100 profile" id="profile">
-    <!-- on lg -->
+    <!-- on lg --> 
     <div class="container-fluid p-0 m-0 d-none d-md-block">
         <div class="row " style="height:100vh !important;margin-left:10%;margin-right:10%;">
             <div class="col-md-6 my-auto ">
